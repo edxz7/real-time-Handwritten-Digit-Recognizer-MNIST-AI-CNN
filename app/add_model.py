@@ -8,7 +8,7 @@ import sys
 model_name = sys.argv[1]
 model_url  = sys.argv[2]
 
-with open("avaible_models.txt", "a") as f:
+with open("app/avaible_models.txt", "a") as f:
     f.write("{} {}".format(model_name, model_url) + "\n")
 
 
