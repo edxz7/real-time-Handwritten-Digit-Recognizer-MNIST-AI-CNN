@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digit Draw</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/theme_by_Themestr.css">
+</head>
+
+<body >
+  <div class="container-fluid bg-primary py-4">
+      <div class="container">
+          <h2 class="display-4 text-sm-center text-md-center" id="header" ><b>Handwritten Digit Recognition</b> </h2>
+      </div>
+  </div>
+  <div class="spacer"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="mx-auto">
+        <div id="canvas-div" >
+          <canvas id="canvas" width="364" height="364"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mx-auto ">
+          <button type="button" class="btn btn-primary" id="predict" >Predict <i id="status"></i></button>
+          <button type="button" class="btn btn-default" id="clear-canvas">Clear</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mx-auto ">
+          <svg id="svg-chart"></svg>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mx-auto">
+        <div class="card-body text-sm-center text-md-center" >
+          <p><large>Draw a single digit (0-9) and click Predict.</large></p>
+          <p><large>A Convolutional Neural Network (CNN) trained against the MNIST character dataset</large></p>
+          <p><large> will classify the image. Probabilities for each classification label are plotted below.</large></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="../static/canvas.js"></script>
+  <script src="../static/predict.js"></script>
+
+
+  <!-- <div id="container">
+    <div id="main">
+
+    </div>
+  </div> -->
+  <footer id="footer">
+    > https://github.com/edxz7
+
+  </footer>
+
+</body>
+</html>

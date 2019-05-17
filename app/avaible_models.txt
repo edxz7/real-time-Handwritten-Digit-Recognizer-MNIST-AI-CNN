@@ -1,0 +1,3 @@
+caps-net none
+resnet-ish https://drive.google.com/uc?export=download&id=1-9_N0spbotDJPVOAxfkAZADt9unWRKuN
+lenet-like https://drive.google.com/uc?export=download&id=1PgpvZyQ2Rqhbf0pPBSKJq0GJL27v09Qc

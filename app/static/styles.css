@@ -1,0 +1,90 @@
+
+/* body {
+	margin-top: 50px;
+}
+
+#canvas {
+	border: 1px solid #aaaaaa;
+}
+
+#canvas-div {
+	margin-bottom: 20px;
+}
+
+#header {
+	margin-top: 0px;
+}
+
+#svg-chart {
+	margin-top: 15px;
+}
+
+.bar { 
+	fill: rgb(70, 180, 76); 
+}
+
+.bar:hover {
+    fill: orangered ;
+}
+
+.axis text {
+  font: 30px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+} */
+
+.spacer {
+  height: 30px;
+}
+
+p {
+  font-family: 'Akronim', cursive;
+  font-size: 30px;
+}
+h2 {
+  color: #ffffff;
+  font-family: 'Black And White Picture', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#svg-chart {
+	margin-top: 0px;
+}
+
+.bar { 
+	fill: rgb(70, 180, 76); 
+}
+
+.bar:hover {
+    fill: orangered ;
+}
+
+.axis text {
+  font: 20px sans-serif;
+  color: #ffffff;
+}
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#footer {
+  background-color: #000;
+  position: relative;
+  /* height: 40px; */
+  font-family: 'Akronim', cursive;
+  font-size: 20px;
+  color: #ffffff;
+  /* margin-top: -100px; */
+  
+}
