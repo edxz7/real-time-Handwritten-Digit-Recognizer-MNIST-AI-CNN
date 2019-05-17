@@ -96,14 +96,17 @@ To deploy the app using a particular neural network architecture please type:
 python app/server.py serve model_name
 ```
 
-where ```model_name``` here is the name of one of the supported models for this app. In the app folder, find the file called 
-"avaible_models.txt" to find the names of the avaible models. For your comodity here I listed commands to call anyone of the
-three avaible models
-
+where ```model_name``` is the name of one of the supported models for this app. In the app folder, find the file called 
+"avaible_models.txt" to find the names of the avaible models. For your comodity I listed all the avaible models, so you can copy and paste these commnads to run the app
 ````bash
 python app/server.py serve caps-net
 python app/server.py serve resnet-ish
 python app/server.py serve lenet-like
+````
+Once the app is running, paste the following direction in your favorite web browser (I only tested the app in safari and chrome).
+
+````
+http://0.0.0.0:5042
 ````
 
 Also you can create and add easily your models. Right now, this code only support models written with pytorch
