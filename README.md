@@ -76,7 +76,7 @@ Another cool feature of the capsule net, is that it works like an inverse image 
 
 <img src = "img_src/caps_reconstructions.png" width="600">
 
-In the last case, the net missclasify the zero drew at the top of the portrait and reconstructs the digit 'nine'.
+In the last case, the net missclasify the zero drew at the top of the image portrait and reconstructs it as the digit 'nine'.
 
 
 Installation
