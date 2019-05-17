@@ -9,6 +9,7 @@ Table of contents
 <!--ts-->
    * [Motivation](#Motivation)
    * [Nets implemented in this repo](#Nets-implemented-in-this-repo)
+   * [Inverse image decoding with the capsule network](#Inverse-image-decoding-with-the-capsule-network)
    * [Installation](#installation)
    * [Usage](#usage)
    * [Add your own models](#Add-your-own-models)
@@ -69,6 +70,8 @@ Nets implemented in this repo
 * The "Capsule net", the capsule net is a very cool and clever idea which make used of  spatial information contained inside the image to improve its performance. Indeed I found the capsule net amazing because for me the idea behind the routing agreement slgorithm looks very similar to the idea behind the determination of eigenstates in quantum physics. I use <a href="https://github.com/gram-ai/capsule-networks">this </a> GitHub repo as a reference to build the network
 
 
+Inverse image decoding with the capsule network
+============
 Another cool feature of the capsule net, is that it works like an inverse image decoder, so it's possible extract the image that the neural net "think" it is seen. Below I show interesting examples of this. 
 
 <img src = "img_src/caps_reconstructions.png" width="600">
