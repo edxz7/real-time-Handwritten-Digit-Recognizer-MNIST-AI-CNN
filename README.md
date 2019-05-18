@@ -67,7 +67,7 @@ Nets implemented in this repo
 
 * Resnet-ish. A pure convolutional neural network coded by <a href="https://twitter.com/jeremyphoward?lang=es"/> Jeremy Howard</a> in this <a href="https://github.com/fastai/course-v3/blob/master/nbs/dl1/lesson7-resnet-mnist.ipynb"/> notebook </a>
 * Lenet-like. A neural network based on the lenet5 arcchitecture coded by Chris Deotte in <a href="https://www.kaggle.com/cdeotte/25-million-images-0-99757-mnist/notebook">this kaggle kernel</a> , (I code only one of the fifteen CNNs that are originally proposed)
-* The "Capsule net", the capsule net is a very cool and clever idea which make used of  spatial information contained inside the image to improve its performance. Indeed I found the capsule net amazing because for me the idea behind the routing agreement slgorithm looks very similar to the idea behind the determination of eigenstates in quantum physics. I use <a href="https://github.com/gram-ai/capsule-networks">this </a> GitHub repo as a reference to build the network
+* The "Capsule net", the capsule net is a very cool and clever idea which make used of  spatial information contained inside the image to improve its performance. Indeed I found the capsule net amazing because for me the idea behind the routing agreement algorithm looks very similar to the idea behind the determination of eigenstates in quantum physics. I use <a href="https://github.com/gram-ai/capsule-networks">this </a> GitHub repo as a reference to build the network
 
 
 Inverse image decoding with the capsule network
@@ -131,8 +131,8 @@ Here ```model_name``` is the name you want to use for your model
 If you have stored your model in google drive or dropbox you can pass its url as second argument to downloaded it.
 **Note** the url should be a direct download link not the share link (which is the first option provided). To transform your share link to a direct download link please use:
 
-Google Drive: Use this <a href="https://www.wonderplugin.com/online-tools/google-drive-direct-link-generator/"/>link</a> generator.
-Dropbox: Use this link generator <a href=>https://syncwithtech.blogspot.com/p/direct-download-link-generator.html</a>
+*Google Drive: Use this <a href="https://www.wonderplugin.com/online-tools/google-drive-direct-link-generator/"/>link</a> generator.
+*Dropbox: Use this <a href=https://syncwithtech.blogspot.com/p/direct-download-link-generator.html/> link generator</a> 
 
 If you don't provided a url as second argument, you must pass the word none and you must place manually your .pkl or .pth file
 to the directory called ```models```
