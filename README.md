@@ -184,7 +184,7 @@ Credits
 ============
 
 * The original code for the neural networks is cited in the section "Nets implemented in this repo"
-* The code for the starlette server was adapted from: https://github.com/render-examples/fastai-v3
+* The code for the starlette server was adapted from: https://github.com/simonw/cougar-or-not
 * The code for the d3.js was adaptded from https://github.com/rhammell/mnist-draw
 
 
