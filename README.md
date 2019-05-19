@@ -7,6 +7,7 @@
 Table of contents
 =================
 <!--ts-->
+   * [The deployed app](#The deployed app)
    * [Motivation](#Motivation)
    * [Nets implemented in this repo](#Nets-implemented-in-this-repo)
    * [Inverse image decoding with the capsule network](#Inverse-image-decoding-with-the-capsule-network)
@@ -21,6 +22,10 @@ Table of contents
 
 <!--te-->
 
+The deployed app
+============
+
+You can pllay with the webapp following <a href="http://www.edxz7c-handwriting-recognizer.com/"/>this link</a> 
 
 Motivation
 ============
