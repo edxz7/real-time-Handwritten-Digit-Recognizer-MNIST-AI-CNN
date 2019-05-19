@@ -53,7 +53,7 @@ As you can see in the figure above, the width and color changes as a digit is dr
 
 As humans we tend to associate any shape to a familiar concept, for example you can see a smiling face just here ( = ) ). So I tested if the networks that I trained for this code share this ability of recognize abstract representations of a digit. 
 
-At difference with the pathological cases of the MNIST set (where some digits are unrecognizable with its associated labels for any human being), I decided to test if the the networks are capable to recognized the "abstract" idea of a certain digit, under the condition that its representation should be easily recognized by any human. In the image below I represent the following numbers: 
+At difference with the pathological cases of the MNIST set (where some digits are unrecognizable for any human being), I decided to test if the networks with "abstract" representations of a digit, but under the condition that their representation should be easily recognizable for any of us. In the image below I shown examples for the following numbers: 
 
 * row1:      4  8   5 
 * row2:      6   7   4 
