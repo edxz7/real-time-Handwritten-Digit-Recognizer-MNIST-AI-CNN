@@ -62,7 +62,7 @@ At difference with the pathological cases of the MNIST set (where some digits ar
 
 I was amazed with the great performance of the nets, so I pushed them a bit further in its ability to recognize an abstract representation of a digit with the following images.
 
-<img src = "img_src/fig_3.png" width="600">
+<img src = "img_src/fig_3.png" width="1000">
 
 Particularly a challenging one was the  digit "4". I drew it as descending stairs from heaven with a rainbow waterfall at the background (yeah all that is there, you can see it? :blush:  :roll_eyes: :expressionless:) and the net can do it very well, it choose the number 4 but it also get doubts and give it a chance  (with a certain probability) to the number 1 (a very reasonable choice).
 
