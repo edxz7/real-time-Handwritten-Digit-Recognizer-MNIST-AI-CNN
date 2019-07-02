@@ -13,6 +13,7 @@ from starlette.middleware.cors import CORSMiddleware
 import uvicorn, aiohttp, asyncio
 from torchvision import transforms
 from pathlib import Path
+# from fastai import 
 from fastai.vision import open_image, load_learner
 import io
 import sys
@@ -22,6 +23,8 @@ from PIL import Image
 import torch
 import torch.nn.functional as F
 import importlib.util
+
+# import cv2
 
 path = Path(__file__).parent
 models_path = path / 'models'
@@ -143,12 +146,26 @@ def predict_with_torch(image_bytes):
 
             arr_image = torch.tensor(np.array(image))
             arr_image = arr_image.type('torch.FloatTensor')[None, None, :, :]  
-
+            # uncomment for debuggin (watch how the feeded image looks)
+            # import matplotlib
+            # matplotlib.use('TkAgg') 
+            # from matplotlib import pyplot as plt
+            # plt.imshow(np.squeeze(arr_image), cmap='gray')
+            # plt.show()
+            # Predict class
+            #print(arr_image.shape)
             with torch.no_grad():
             # get sample scores
                 model.eval() # for the capsule net, one of the outputs are probs not logits
                 caps_output, reconstructions, probs, _ = model(arr_image)
-
+            # Uncomment to observe the reconstructed image debugging
+            # plt.imshow(np.squeeze(reconstructions.view(-1, 1, 28, 28)), cmap='gray')
+            # plt.show()
+            #logits = F.log_softmax(scores, dim=1)
+            #probs = torch.exp(logits)
+            #p, preds = probs.topk(10,dim=1)
+            # Uncomment for debbuging
+            # print("total prob ", probs.sum())
             return 1, [float(num) for num in probs.squeeze()]
 
     
