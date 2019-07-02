@@ -180,7 +180,7 @@ In the future I want to add functionality to the app to build internally a datab
 
 Credits
 ============
-
+* <a href="https://github.com/AbrahamDN">AbrahamDN</a> improved the UI design in the 2.0 verison 
 * The original code for the neural networks is cited in the section "Nets implemented in this repo"
 * The code for the starlette server was adapted from: https://github.com/simonw/cougar-or-not
 * The code for the d3.js was adaptded from https://github.com/rhammell/mnist-draw
