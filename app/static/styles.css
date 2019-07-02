@@ -1,120 +1,90 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-html,
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3vmin !important;
-  overflow-x: hidden;
+/* body {
+	margin-top: 50px;
 }
 
-.header {
-  height: 100vh;
-}
-
-.nav {
-  padding: 20px;
-  background: #C62828;
-  position: relative;
-  width: 100%;
-  color: #fff;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-}
-
-li {
-  padding-left: 10px;
-}
-
-nav a {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-nav a:hover {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-
-
-h1 {
-  font-size: 5.5vmin !important;
-}
-
-.gradient {
-  background: linear-gradient(90deg, #C62828, #E64A19) !important;
-  color: #fff !important;
-}
-
-.btn {
-  background: var(--gradient);
+#canvas {
+	border: 1px solid #aaaaaa;
 }
 
 #canvas-div {
-  margin-top: -10px;
+	margin-bottom: 20px;
 }
 
-.center {
-  width: 100%;
-  display: flex;
+#header {
+	margin-top: 0px;
 }
-
-.center div {
-  margin: auto;
-  padding: 10px 0;
-}
-
 
 #svg-chart {
-  margin-top: 0px;
+	margin-top: 15px;
 }
 
-.bar {
-  fill: #F44336;
+.bar { 
+	fill: rgb(70, 180, 76); 
 }
 
 .bar:hover {
-  fill: orangered;
+    fill: orangered ;
 }
 
 .axis text {
-  font: 20px sans-serif;
-  color: #ffffff;
+  font: 30px sans-serif;
 }
 
+.axis path,
 .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-#about {
-  padding: 10%;
-  text-align: center;
-  line-height: 2;
+.x.axis path {
+  display: none;
+} */
+
+.spacer {
+  height: 30px;
 }
 
-#about hr {
-  width: 50%;
+p {
+  font-family: 'Akronim', cursive;
+  font-size: 30px;
+}
+h2 {
+  color: #ffffff;
+  font-family: 'Black And White Picture', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
 }
 
-#about p {
-  margin-top: 30px;
+#svg-chart {
+	margin-top: 0px;
 }
 
+.bar { 
+	fill: rgb(70, 180, 76); 
+}
+
+.bar:hover {
+    fill: orangered ;
+}
+
+.axis text {
+  font: 20px sans-serif;
+  color: #ffffff;
+}
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
 
 #footer {
   background-color: #000;
-  padding: 3%;
-  color: #5c5c5c;
-  text-align: center;
-}
-
-#footer a {
-  color: #C62828 !important;
+  position: relative;
+  /* height: 40px; */
+  font-family: 'Akronim', cursive;
+  font-size: 20px;
+  color: #ffffff;
+  /* margin-top: -100px; */
+  
 }
