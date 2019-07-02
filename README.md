@@ -7,8 +7,10 @@
 Table of contents
 =================
 <!--ts-->
+   * [The web app](#The-web-app)
    * [Motivation](#Motivation)
    * [Nets implemented in this repo](#Nets-implemented-in-this-repo)
+   * [Inverse image decoding with the capsule network](#Inverse-image-decoding-with-the-capsule-network)
    * [Installation](#installation)
    * [Usage](#usage)
    * [Add your own models](#Add-your-own-models)
@@ -20,6 +22,10 @@ Table of contents
 
 <!--te-->
 
+The web app
+============
+
+You can play with the app following <a href="http://edxz7c-handwriting-recognizer.com/"/>this link</a> (the app also works in touch screen devices and it's more fun with them)
 
 Motivation
 ============
@@ -45,9 +51,7 @@ As you can see in the figure above, the width and color changes as a digit is dr
 
 **Interesting results:**
 
-As humans we tend to associate any shape to a familiar concept, for example you can see a smiling face just here ( = ) ). So I tested if the networks that I trained for this code share this ability of recognize abstract representations of a digit. 
-
-At difference with the pathological cases of the MNIST set (where some digits are unrecognizable with its associated labels for any human being), I decided to test if the the networks are capable to recognized the "abstract" idea of a certain digit, under the condition that its representation should be easily recognized by any human. In the image below I represent the following numbers: 
+As humans we tend to associate abstract ideas to familiar concepts, for example you can see an smiling face just here ( = ) ). So I tested if the networks that I trained share this ability of recognizing abstract representations of a digit, but at difference with the pathological cases of the MNIST set (where some digits are unrecognizable for any human being), I used representations which are easily recognizable for any of us. In the image below I shown examples for the following numbers: 
 
 * row1:      4  8   5 
 * row2:      6   7   4 
@@ -56,7 +60,7 @@ At difference with the pathological cases of the MNIST set (where some digits ar
 
 I was amazed with the great performance of the nets, so I pushed them a bit further in its ability to recognize an abstract representation of a digit with the following images.
 
-<img src = "img_src/fig_3.png" width="600">
+<img src = "img_src/fig_3.png" width="1000">
 
 Particularly a challenging one was the  digit "4". I drew it as descending stairs from heaven with a rainbow waterfall at the background (yeah all that is there, you can see it? :blush:  :roll_eyes: :expressionless:) and the net can do it very well, it choose the number 4 but it also get doubts and give it a chance  (with a certain probability) to the number 1 (a very reasonable choice).
 
@@ -66,14 +70,16 @@ Nets implemented in this repo
 
 * Resnet-ish. A pure convolutional neural network coded by <a href="https://twitter.com/jeremyphoward?lang=es"/> Jeremy Howard</a> in this <a href="https://github.com/fastai/course-v3/blob/master/nbs/dl1/lesson7-resnet-mnist.ipynb"/> notebook </a>
 * Lenet-like. A neural network based on the lenet5 arcchitecture coded by Chris Deotte in <a href="https://www.kaggle.com/cdeotte/25-million-images-0-99757-mnist/notebook">this kaggle kernel</a> , (I code only one of the fifteen CNNs that are originally proposed)
-* The "Capsule net", the capsule net is a very cool and clever idea which make used of  spatial information contained inside the image to improve its performance. Indeed I found the capsule net amazing because for me the idea behind the routing agreement slgorithm looks very similar to the idea behind the determination of eigenstates in quantum physics. I use <a href="https://github.com/gram-ai/capsule-networks">this </a> GitHub repo as a reference to build the network
+* The "Capsule net", the capsule net is a very cool and clever idea which make used of  spatial information contained inside the image to improve its performance. Indeed I found the capsule net amazing because for me the idea behind the routing agreement algorithm looks very similar to the idea behind the determination of eigenstates in quantum physics. I use <a href="https://github.com/gram-ai/capsule-networks">this </a> GitHub repo as a reference to build the network
 
 
+Inverse image decoding with the capsule network
+============
 Another cool feature of the capsule net, is that it works like an inverse image decoder, so it's possible extract the image that the neural net "think" it is seen. Below I show interesting examples of this. 
 
 <img src = "img_src/caps_reconstructions.png" width="600">
 
-In the last case, the net missclasify the zero drew at the top of the portrait and reconstructs the digit 'nine'.
+In the last case, the net missclasify the zero drew at the top of the image portrait and reconstructs it as the digit 'nine'.
 
 
 Installation
@@ -128,8 +134,8 @@ Here ```model_name``` is the name you want to use for your model
 If you have stored your model in google drive or dropbox you can pass its url as second argument to downloaded it.
 **Note** the url should be a direct download link not the share link (which is the first option provided). To transform your share link to a direct download link please use:
 
-Google Drive: Use this <a href="https://www.wonderplugin.com/online-tools/google-drive-direct-link-generator/"/>link</a> generator.
-Dropbox: Use this link generator <a href=>https://syncwithtech.blogspot.com/p/direct-download-link-generator.html</a>
+*Google Drive: Use this <a href="https://www.wonderplugin.com/online-tools/google-drive-direct-link-generator/"/>link</a> generator.
+*Dropbox: Use this <a href=https://syncwithtech.blogspot.com/p/direct-download-link-generator.html/> link generator</a> 
 
 If you don't provided a url as second argument, you must pass the word none and you must place manually your .pkl or .pth file
 to the directory called ```models```
@@ -174,9 +180,9 @@ In the future I want to add functionality to the app to build internally a datab
 
 Credits
 ============
-
+* <a href="https://github.com/AbrahamDN">AbrahamDN</a> improved the UI design in the 2.0 verison 
 * The original code for the neural networks is cited in the section "Nets implemented in this repo"
-* The code for the starlette server was adapted from: https://github.com/render-examples/fastai-v3
+* The code for the starlette server was adapted from: https://github.com/simonw/cougar-or-not
 * The code for the d3.js was adaptded from https://github.com/rhammell/mnist-draw
 
 
