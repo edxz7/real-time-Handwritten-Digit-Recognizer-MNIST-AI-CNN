@@ -25,7 +25,7 @@ Table of contents
 The web app
 ============
 
-You can play with the app following <a href="http://edxz7c-handwriting-recognizer.com/"/>this link</a> (the app also works in touch screen devices and it's more fun with them)
+You can play with the app following <a href="http://edxz7c-handwriting-recognizer.com/"/>this link</a> (right now the app is shut down, sorry for the inconvenience) (the app also works in touch screen devices and it's more fun with them)
 
 Motivation
 ============
