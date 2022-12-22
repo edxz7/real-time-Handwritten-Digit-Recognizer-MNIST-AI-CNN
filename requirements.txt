@@ -1,11 +1,9 @@
 numpy
-torch
 torchvision
-https://download.pytorch.org/whl/cpu/torch-1.1.0-cp37-cp37m-linux_x86_64.whl
-fastai
+fastai==1.0.61
 starlette
 uvicorn==0.11.7
 python-multipart
 aiofiles
 aiohttp
-PIL
+Pillow

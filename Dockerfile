@@ -1,4 +1,4 @@
-FROM python:3.7-slim-stretch
+FROM pytorch/pytorch:latest
 
 RUN apt-get update && apt-get install -y git python3-dev gcc \
     && rm -rf /var/lib/apt/lists/*
@@ -10,8 +10,6 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt --upgrade
 
 COPY app app/
-
-RUN python app/server.py
 
 EXPOSE 5042
 

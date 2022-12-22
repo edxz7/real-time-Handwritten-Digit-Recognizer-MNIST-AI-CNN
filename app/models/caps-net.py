@@ -29,7 +29,7 @@ class CapsuleLayer(nn.Module):
                out_channels=32, kernel_size=9, stride=2, num_iterations=NUM_ROUTING_ITERATIONS):
       super().__init__()
 
-      # num_route_nodes is the vetor input
+      # num_route_nodes is the vector input
       self.num_route_nodes = num_route_nodes
       self.num_capsules  = num_capsules
       self.num_iterations= num_iterations
@@ -49,11 +49,11 @@ class CapsuleLayer(nn.Module):
     
   def forward(self, x):
       #################
-      # Code for calculate the digit capss output vector
+      # Code for calculate the digit caps output vector
       ################
       if self.num_route_nodes != -1:
-        # Each None adds a dimension to the tensor, the : slice all the avaible elements in the current dimensions 
-        # u is 3d and here we are adding a dimension for the batch size and another to
+        # Each None adds a dimension to the tensor, the : slice all the available elements in the current dimensions 
+        # u is 3d and here we are adding a dimension for the batch size and another o
         # for the stacked u vectors from the primary caps 
         u = x[None, :, :, None, :]
         # The weights matrix is a rank 4 tensor and we need add an extra dim to make it compatible
